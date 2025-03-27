@@ -1,0 +1,43 @@
+<div class="main-container" *ngIf="selectedProject">
+    <div style="width: 65%;">
+        <div class="description">
+            <img src="./assets/Ellipse 8.png">
+            <div class="descriptions-container">
+                <div class="duration">
+                    <h1>About the project</h1>
+                    <div class="duration-container">
+                        Duration: {{ selectedProject.duration }}
+                    </div>
+                </div>
+                <div class="description-text">{{ selectedProject.about }}</div>
+            </div>
+        </div>
+        <div class="description">
+            <img src="./assets/Ellipse 8.png">
+            <div class="descriptions-container">
+                <h1>How I have organised my work process</h1>
+                <div class="description-text">{{ selectedProject.how }}</div>
+            </div>
+        </div>
+        <div class="description">
+            <img src="./assets/Ellipse 8.png">
+            <div class="descriptions-container">
+                <h1>What I have learnt</h1>
+                <div class="description-text">{{ selectedProject.group }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="project-picture-container">
+        <h2>Technologies</h2>
+        <div class="skill-icons-container">
+            <img *ngFor="let icon of selectedProject.skillsIcons" [src]="icon" alt="Technology Icon">
+        </div>
+        <div>
+            <img class="project-img" src="{{ selectedProject.pic }}" alt="">
+        </div>
+        <div>
+            <button >Live Test</button>
+            <button>GitHub</button>
+        </div>
+    </div>
+</div>

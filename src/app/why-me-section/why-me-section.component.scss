@@ -1,0 +1,151 @@
+@mixin flex-center($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.why-me-section-main-container {
+    @include flex-center(flex-start, center);
+    gap: 46px;
+    flex-direction: column;
+    background-color: #262E34;
+    max-width: 100%;
+    height: auto;
+}
+
+.why-me-location-container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.location-motive-container {
+    @include flex-center(flex-end, flex-start);
+    gap: 52px;
+}
+
+.motivation-text-container {
+    @include flex-center(flex-end, flex-end);
+    flex-direction: column;
+    gap: 24px;
+
+    button {
+        color: #89BCD0;
+        font-family: 'josefin sans';
+        border: #89BCD0, solid, 1px;
+        background-color: transparent;
+        width: 150px;
+        height: 50px;
+        color: 18px;
+        border-radius: 30px;
+        font-size: 18px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+    }
+
+}
+
+.motivation-text {
+    color: white;
+    font-size: 18px;
+    font-family: 'josefin Sans';
+    max-width: 400px;
+    word-wrap: break-word;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #89BCD0;
+}
+
+.location {
+    @include flex-center;
+    font-family: 'josefin sans';
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.gps-container {
+    position: relative;
+    width: fit-content;
+
+    img:first-child {
+        position: relative;
+    }
+
+    img:last-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, 50%);
+    }
+}
+
+.skills-container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.skills-and-to-be-learned {
+    @include flex-center;
+}
+
+.skills-icons-container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+}
+
+.currently-learning-container {
+    background-image: url('/assets/Ellipse 25.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 380px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 24px;
+    font-family: 'josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.my-projects-section {
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+}
+
+.my-projects {
+    font-family: 'josefin Sans';
+    font-size: 30px;
+    font-weight: 500;
+    color: #89BCD9;
+    width: 100%;
+    @include flex-center;
+    gap: 160px;
+    padding-bottom: 46px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

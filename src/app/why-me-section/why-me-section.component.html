@@ -1,0 +1,69 @@
+<div class="why-me-section-main-container">
+    <div class="why-me-location-container">
+        <h1>Why me</h1>
+        <div class="location-motive-container">
+            <div class="location">
+                <div class="gps-container">
+                    <img src="./assets/gps.png">
+                    <img src="./assets/Ellipse 20.png">
+                </div>
+                <p> <span style="color: #89BCD0"> I am </span>located in Erding..</p>
+            </div>
+            <div class="motivation-text-container">
+                <div class="motivation-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus facilis quos reprehenderit
+                    laborum provident illo, odio nostrum atque quidem eligendi tempora nam dolore voluptatum, debitis
+                    magnam nobis doloremque! Eum, magnam.</div>
+                <button>Let's talk</button>
+            </div>
+        </div>
+    </div>
+    <div class="skills-container">
+        <h1>My Skills</h1>
+        <div class="skills-and-to-be-learned">
+            <div class="skills-icons-container">
+                <img src="./assets/angular.png" alt="">
+                <img src="./assets/typescript.png" alt="">
+                <img src="./assets/javascript.png" alt="">
+                <img src="./assets/html.png" alt="">
+                <img src="./assets/css.png" alt="">
+                <img src="./assets/api.png" alt="">
+                <img src="./assets/firebase.png" alt="">
+                <img src="./assets/git.png" alt="">
+                <img src="./assets/material design.png" alt="">
+                <img src="./assets/scrum.png" alt="">
+            </div>
+            <div class="currently-learning-container">
+                <div>I am currently learning</div>
+                <div>
+                    <img src="./assets/react.png">
+                    <img src="./assets/vue.png">
+                </div>
+                <div>
+                    Show that you are motivated to continually improve your skills, implement innovative solutions and
+                    stay abreast of new technologies.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-projects-section">
+        <h1>
+            My Projects
+        </h1>
+        <div class="my-projects">
+            <a (click)="selectProject('Ongoing project'); $event.preventDefault()" href="#">
+                1. Ongoing project
+            </a>
+            <a (click)="selectProject('El Pollo Loco'); $event.preventDefault()" href="#">
+                2. El pollo loco
+            </a>
+            <a (click)="selectProject('Join'); $event.preventDefault()" href="#">
+                3. Join
+            </a>
+            <a (click)="selectProject('Ongoing'); $event.preventDefault()" href="#">
+                4. Ongoing
+            </a>
+        </div>
+    </div>
+</div>
+<app-project-detail [selectedProject]="selectedProject"></app-project-detail>

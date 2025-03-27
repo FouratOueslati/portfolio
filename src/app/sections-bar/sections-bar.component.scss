@@ -1,0 +1,62 @@
+@mixin hover-effect($color: white, $duration: 0.2s) {
+    transition: color $duration ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.sections-bar {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    background-color: #89BCD9;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    font-family: 'josefin sans';
+    color: #262E34;
+    z-index: 1;
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-family: 'josefin sans';
+        color: #262E34;
+    }
+
+    button,
+    img {
+        @include hover-effect;
+    }
+
+}
+
+.logo-container{
+    font-size: 14px;
+    div {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.sections-container {
+    display: flex;
+    gap: 90px;
+
+    a {
+        @include hover-effect;
+    }
+}
+
+.translation-container {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}

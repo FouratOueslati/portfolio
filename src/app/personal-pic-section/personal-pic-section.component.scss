@@ -1,0 +1,74 @@
+@mixin flex-center($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.partition-container {
+    max-width: 100%;
+    background-color: #262E34;
+    @include flex-center;
+    height: 85vh;
+    width: 100vw;
+}
+
+.name-and-info-container {
+    @include flex-center(space-around, center);
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+}
+
+.img-me-container {
+    @include flex-center(center, flex-end);
+    width: 45%;
+    height: 100%;
+    background-image: url('/assets/shape.png');
+    background-repeat: no-repeat;
+    background-position: center 200px;
+}
+
+.img-me {
+    width: 500px;
+    height: 650px;
+}
+
+.info-container {
+    @include flex-center;
+    gap: 74px;
+    flex-direction: column;
+}
+
+.logo-and-hypertext-container {
+    width: 100%;
+    @include flex-center(space-between, flex-end);
+}
+
+.logo-container {
+    padding-left: 40%;
+    @include flex-center;
+    flex-direction: column;
+}
+
+.hypertext-container {
+    @include flex-center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.name-and-skill-container {
+    @include flex-center;
+    gap: 16px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.arrow {
+    border-radius: 30px;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+}

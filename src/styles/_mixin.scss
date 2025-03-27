@@ -1,0 +1,16 @@
+@mixin dark-button($color, $width: 150px, $height: 50px) {
+    color: $color;
+    font-family: 'Josefin Sans';
+    border: 1px solid $color;
+    background-color: transparent;
+    width: $width;
+    height: $height;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+}

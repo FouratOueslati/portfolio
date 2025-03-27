@@ -1,0 +1,76 @@
+.main-container {
+    padding: 120px;
+    background-color: #2D383F;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+
+.descriptions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+h1 {
+    font-family: 'josefin Sans';
+    font-weight: 400;
+    size: 28px;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'josefin Sans';
+    font-weight: 400;
+    size: 18px;
+    color: white;
+    margin: 0;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.duration-container {
+    font-family: 'josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.description-text {
+    font-family: 'josefin Sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.project-picture-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    button {
+    }
+}
+
+.project-img {
+    width: 500px;
+    border-radius: 30px;
+}
+
+.skill-icons-container {
+    display: flex;
+}
