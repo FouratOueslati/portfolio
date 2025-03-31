@@ -28,25 +28,6 @@
     @include flex-center(flex-end, flex-end);
     flex-direction: column;
     gap: 24px;
-
-    button {
-        color: #89BCD0;
-        font-family: 'josefin sans';
-        border: #89BCD0, solid, 1px;
-        background-color: transparent;
-        width: 150px;
-        height: 50px;
-        color: 18px;
-        border-radius: 30px;
-        font-size: 18px;
-        transition: background-color 0.2s ease-in-out;
-
-        &:hover {
-            cursor: pointer;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-    }
-
 }
 
 .motivation-text {
@@ -107,7 +88,7 @@ h1 {
 }
 
 .currently-learning-container {
-    background-image: url('/assets/Ellipse 25.png');
+    background-image: url('../../assets/Ellipse\ 25.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

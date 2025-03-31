@@ -1,0 +1,86 @@
+.main-container {
+    background-color: #262E34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    height: auto;
+}
+
+p {
+    font-family: 'Josefin Sans';
+    font-size: 32px;
+    font-weight: 400;
+    color: #89BCD9;
+}
+
+.quote {
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-image: url('./../../assets/Ellipse\ 02.png');
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+
+    p {
+        width: 30ch;
+    }
+
+    a {
+        color: #89BCD9;
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 24px;
+    }
+
+    :hover {
+        cursor: default;
+    }
+}
+
+.colleagues-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.colleagues-names {
+    font-family: 'Josefin Sans';
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+}
+
+.prject-name {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.colleagues-text {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 400;
+    color: #89BCD9;
+}

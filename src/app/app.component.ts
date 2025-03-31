@@ -5,11 +5,12 @@ import { SectionsBarComponent } from "./sections-bar/sections-bar.component";
 import { PersonalPicSectionComponent } from "./personal-pic-section/personal-pic-section.component";
 import { WhyMeSectionComponent } from './why-me-section/why-me-section.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SectionsBarComponent, PersonalPicSectionComponent, WhyMeSectionComponent, ProjectDetailComponent],
+  imports: [CommonModule, RouterOutlet, SectionsBarComponent, PersonalPicSectionComponent, WhyMeSectionComponent, ProjectDetailComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -23,14 +23,15 @@
     @include flex-center(center, flex-end);
     width: 45%;
     height: 100%;
-    background-image: url('/assets/shape.png');
+    background-image: url('../../assets/shape.png');
     background-repeat: no-repeat;
     background-position: center 200px;
 }
 
 .img-me {
-    width: 500px;
-    height: 650px;
+    max-width: 460px;
+    max-height: 680px;
+    margin-bottom: -100px;
 }
 
 .info-container {
