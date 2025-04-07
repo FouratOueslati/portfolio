@@ -38,5 +38,9 @@
 }
 
 .send-button {
+    @include button(#8F9190, #8F9190, transparent);
 
+    &:hover {
+        cursor: pointer;
+    }
 }

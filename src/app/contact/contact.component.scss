@@ -79,8 +79,150 @@ p {
     color: white;
 }
 
+.contact-me-text-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-contact-me-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
 h1 {
     font-size: 54px;
     font-weight: 400;
     color: #89BCD9;
+}
+
+.up-arrow {
+    position: relative;
+    left: 35%;
+}
+
+.why-contact-me {
+    width: 40ch;
+}
+
+.main-contact-data-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 72px;
+
+    span {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        line-height: 130%;
+    }
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+}
+
+.contact-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.mail-and-phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.name-and-email-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.sender-data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+        font-family: 'Josefin Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #89BCD9;
+        margin-left: 48px;
+    }
+
+    input {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 30px;
+        width: 450px;
+        height: 60px;
+        background-color: transparent;
+        border: 1px solid #89BCD9;
+        outline: none;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: rgb(49, 63, 72);
+        }
+    }
+
+}
+
+.msg-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    span {
+        font-family: 'Josefin Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #89BCD9;
+        margin-left: 48px;
+    }
+
+    textarea {
+        padding: 20px;
+        height: 150px;
+        border-radius: 30px;
+        background-color: transparent;
+        border: 1px solid #89BCD9;
+        outline: none;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: rgb(49, 63, 72);
+        }
+    }
 }
