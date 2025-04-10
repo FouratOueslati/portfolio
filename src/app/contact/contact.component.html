@@ -74,12 +74,17 @@
                     <span>Your message</span>
                     <textarea name="message" [(ngModel)]="formData.message" required></textarea>
                 </div>
-                <div>
-                    <label>
-                        <input type="checkbox" required />
-                        I've read the <a href="/privacy-policy">privacy policy</a>.
+                <div class="policy-check-div">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" (change)="toggleCheckbox()" [ngModel]="isChecked" [ngModelOptions]="{ standalone: true }" required hidden />
+                        <img [src]="imageSrc" alt="checkbox icon"  (mouseenter)="changeImage(true)" (mouseleave)="changeImage(false)">
+                        I've read the <a href="/privacy-policy" target="_blank">privacy policy</a> and agree to the processing of my data as outlined.
                     </label>
-                    <button class="send-button" type="submit">Send</button>
+                    
+                    <button class="send-button" type="submit" [ngClass]="{'active': isChecked}">Send</button>
+                    <div *ngIf="showError" class="error-message">
+                        Please accept the privacy policy.
+                    </div>
                 </div>
             </form>
         </div>

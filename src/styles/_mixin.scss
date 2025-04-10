@@ -38,9 +38,20 @@
 }
 
 .send-button {
-    @include button(#8F9190, #8F9190, transparent);
-
+    @include button(#8F9190, #8F9190, transparent);  // Default color (disabled state)
+    position: absolute;
+    right: 0;
+    top: 20px;
+  
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
-}
+  
+    &.active {
+      @include button(#89BCD0, #89BCD0, transparent);  // When checked, apply this style
+    }
+  
+    &:disabled {
+      @include button(#8F9190, #8F9190, transparent);  // Disabled state
+    }
+  }
