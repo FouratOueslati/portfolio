@@ -18,6 +18,7 @@ export class ContactComponent {
   };
   isChecked = false;
   showError = false;
+  isHover = false;
   imageSrc: string = './assets/Ellipse 32.png';
 
   
@@ -26,13 +27,14 @@ export class ContactComponent {
     if (this.isChecked) {
       this.showError = false;
     }
+    this.changeImage();
   }
 
 
-  changeImage(isHover: boolean) {
+  changeImage() {
     if (this.showError) {
       this.imageSrc = './assets/Ellipse red.png'; 
-    } else if (isHover && !this.isChecked) {
+    } else if (this.isHover && !this.isChecked) {
       this.imageSrc = './assets/hover checkbox.png';
     } else {
       this.imageSrc = this.isChecked ? './assets/checked.png' : './assets/Ellipse 32.png'; 
@@ -40,10 +42,23 @@ export class ContactComponent {
   }
 
 
+  onMouseEnter() {
+    this.isHover = true;
+    this.changeImage(); 
+  }
+
+
+  onMouseLeave() {
+    this.isHover = false;
+    this.changeImage(); 
+  }
+
+  
   sendEmail() {
   
     if (!this.isChecked) {
       this.showError = true; 
+      this.changeImage();
       return;
     }
     if (this.formData.name && this.formData.email && this.formData.message) {
