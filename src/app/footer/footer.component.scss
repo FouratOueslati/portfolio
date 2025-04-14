@@ -1,0 +1,42 @@
+.main-footer-div {
+    box-sizing: border-box;
+    background-color: #89BCD9;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.legal-notice-container {
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: #394B55;
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    a {
+        text-decoration: none;
+        color: #394B55;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.img-container {
+    display: flex;
+    gap: 16px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}

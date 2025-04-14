@@ -55,3 +55,17 @@
       @include button(#8F9190, #8F9190, transparent);  // Disabled state
     }
   }
+  
+
+  .logo-container{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    div {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

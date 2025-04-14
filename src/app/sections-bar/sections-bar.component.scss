@@ -37,15 +37,6 @@
 
 }
 
-.logo-container{
-    font-size: 14px;
-    div {
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
-
 .sections-container {
     display: flex;
     gap: 90px;

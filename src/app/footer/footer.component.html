@@ -1,0 +1,17 @@
+<div class="main-footer-div">
+    <div class="legal-notice-container">
+        <a href="#"> Legal notice</a>
+        <span>&copy; Fourat Oueslati 2025</span>
+    </div>
+    <div class="logo-container">
+        <img src="./assets/Logo icon dark.png">
+        <div style=" font-family: 'anta'; color: #F8F5EC;">F.Oueslati</div>
+        <div style=" font-family: 'josefin sans'; color: #262E34; font-weight: 300;">Developer</div>
+    </div>
+    <div class="img-container">
+        <img [src]="gitHubIconSrc" (mouseover)="changeIcon(true, 'github')" (mouseout)="changeIcon(false, 'github')">
+        <img [src]="emailIconSrc" (mouseover)="changeIcon(true, 'email')" (mouseout)="changeIcon(false, 'email')">
+        <img [src]="linkedInIconSrc" (mouseover)="changeIcon(true, 'linkedIn')"
+            (mouseout)="changeIcon(false, 'linkedIn')">
+    </div>
+</div>

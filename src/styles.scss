@@ -1,9 +1,13 @@
-@import 'styles/mixin';
+@import 'styles/shared-styles';
 body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'anta', 'josefin sans';
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 /* For Webkit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {

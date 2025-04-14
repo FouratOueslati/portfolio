@@ -25,8 +25,12 @@ p {
     gap: 24px;
     background-image: url('./../../assets/Ellipse\ 02.png');
     background-position: center;
-    background-size: cover;
-    transition: transform 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover {
+        animation: swapBg 0.6s forwards;
+    }
 
     p {
         width: 30ch;
@@ -42,6 +46,16 @@ p {
 
     :hover {
         cursor: default;
+    }
+}
+
+@keyframes swapBg {
+    0% {
+        background-image: url('./../../assets/Ellipse\ 02.png');
+    }
+
+    100% {
+        background-image: url('./../../assets/quote on hover.png');
     }
 }
 
@@ -103,6 +117,13 @@ h1 {
 .up-arrow {
     position: absolute;
     right: 30px;
+    transition: background-color 0.2s ease-out;
+    border-radius: 30px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
 }
 
 .why-contact-me {
@@ -243,10 +264,12 @@ h1 {
     font-family: 'Josefin Sans';
     font-size: 16px;
     font-weight: 400;
-    a{
+
+    a {
         text-decoration: none;
         color: #89BCD9;
     }
+
     img {
         transition: transform 0.2s ease;
         width: 24px;

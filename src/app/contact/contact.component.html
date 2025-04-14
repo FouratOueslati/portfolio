@@ -37,9 +37,9 @@
         </div>
     </div>
     <div class="main-contact-me-container">
-        <div class="contact-me-text-container">
+        <div id="contactMe" class="contact-me-text-container">
             <h1>Contact me</h1>
-            <img class="up-arrow" src="./assets/Arrow up.png">
+            <a href="#topOfPage"> <img class="up-arrow" src="./assets/Arrow up.png"></a>
         </div>
         <div class="contact-div">
             <div class="main-contact-data-container">
@@ -76,12 +76,14 @@
                 </div>
                 <div class="policy-check-div">
                     <label class="custom-checkbox">
-                        <input type="checkbox" (change)="toggleCheckbox()" [ngModel]="isChecked" [ngModelOptions]="{ standalone: true }" required hidden />
-                        <img [src]="imageSrc" alt="checkbox icon" (mouseover)="onMouseEnter()" 
-                        (mouseout)="onMouseLeave()" >
-                        I've read the <a href="/privacy-policy" target="_blank">privacy policy</a> and agree to the processing of my data as outlined.
+                        <input type="checkbox" (change)="toggleCheckbox()" [ngModel]="isChecked"
+                            [ngModelOptions]="{ standalone: true }" required hidden />
+                        <img [src]="imageSrc" alt="checkbox icon" (mouseover)="onMouseEnter()"
+                            (mouseout)="onMouseLeave()">
+                        I've read the <a href="/privacy-policy" target="_blank">privacy policy</a> and agree to the
+                        processing of my data as outlined.
                     </label>
-                    
+
                     <button class="send-button" type="submit" [ngClass]="{'active': isChecked}">Send</button>
                     <div *ngIf="showError" class="error-message">
                         Please accept the privacy policy.

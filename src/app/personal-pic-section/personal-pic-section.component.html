@@ -11,9 +11,12 @@
                     <div style="color: #89BCD9; font-family: 'josefin sans'; font-weight: 300;">Developer</div>
                 </div>
                 <div class="hypertext-container">
-                    <img src="./assets/Email button.png" alt="">
-                    <img src="./assets/Github button.png" alt="">
-                    <img src="./assets/Linkedin button.png" alt="">
+                    <img [src]="emailIconSrc" (mouseover)="changeIcon(true, 'email')"
+                        (mouseout)="changeIcon(false, 'email')">
+                    <img [src]="gitHubIconSrc" (mouseover)="changeIcon(true, 'github')"
+                        (mouseout)="changeIcon(false, 'github')">
+                    <img [src]="linkedInIconSrc" (mouseover)="changeIcon(true, 'linkedin')"
+                        (mouseout)="changeIcon(false, 'linkedin')">
                 </div>
             </div>
             <div class="name-and-skill-container">
@@ -25,6 +28,6 @@
                 </div>
             </div>
         </div>
-        <img class="arrow" src="./assets/Arrow down.png">
+        <a href="#whyMe"> <img class="arrow" src="./assets/Arrow down.png"></a>
     </div>
 </div>

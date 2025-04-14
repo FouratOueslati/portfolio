@@ -90,7 +90,7 @@ h1 {
 .currently-learning-container {
     background-image: url('../../assets/Ellipse\ 25.png');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 380px;
     height: 380px;
@@ -102,6 +102,19 @@ h1 {
     font-weight: 400;
     color: white;
     text-align: center;
+
+    &:hover {
+        animation: swapBg 0.6s forwards;
+      }
+    }
+    
+    @keyframes swapBg {
+      0% {
+        background-image: url('../../assets/Ellipse\ 25.png');
+      }
+      100% {
+        background-image: url('../../assets/currently learning hover.png');
+      }
 }
 
 .my-projects-section {

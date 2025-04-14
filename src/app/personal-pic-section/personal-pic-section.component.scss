@@ -24,13 +24,28 @@
     width: 45%;
     height: 100%;
     background-image: url('../../assets/shape.png');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center 200px;
+
+    &:hover {
+        animation: swapBg 0.6s forwards;
+    }
+}
+
+@keyframes swapBg {
+    0% {
+        background-image: url('../../assets/shape.png');
+    }
+
+    100% {
+        background-image: url('../../assets/shape on hover.png');
+    }
 }
 
 .img-me {
-    max-width: 460px;
-    max-height: 680px;
+    max-width: 560px;
+    max-height: 780px;
     margin-bottom: -100px;
 }
 
@@ -55,6 +70,11 @@
     @include flex-center;
     flex-direction: column;
     gap: 16px;
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 .name-and-skill-container {
