@@ -63,16 +63,21 @@
                 <div class="name-and-email-container">
                     <div class="sender-data-container">
                         <span>Your name</span>
-                        <input type="text" name="name" [(ngModel)]="formData.name" required />
+                        <input type="text" name="name" [(ngModel)]="formData.name"
+                            [ngClass]="{'invalid-field': formSubmitted && !formData.name}"
+                            [placeholder]="formSubmitted && !formData.name ? 'Your name is required' : ''" />
                     </div>
                     <div class="sender-data-container">
                         <span>Your Email</span>
-                        <input type="email" name="email" [(ngModel)]="formData.email" required />
+                        <input type="email" name="email"  [(ngModel)]="formData.email" [ngClass]="{'invalid-field': formSubmitted && !formData.email}"
+                            [placeholder]="formSubmitted && !formData.email ? 'Your Email is required' : ''" />
                     </div>
                 </div>
                 <div class="msg-area">
                     <span>Your message</span>
-                    <textarea name="message" [(ngModel)]="formData.message" required></textarea>
+                    <textarea name="message" [(ngModel)]="formData.message"
+                        [ngClass]="{'invalid-field': formSubmitted && !formData.message}"
+                        [placeholder]="formSubmitted && !formData.message ? 'Your text is required' : ''"></textarea>
                 </div>
                 <div class="policy-check-div">
                     <label class="custom-checkbox">

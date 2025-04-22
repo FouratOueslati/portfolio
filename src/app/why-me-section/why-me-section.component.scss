@@ -79,12 +79,29 @@ h1 {
     @include flex-center;
 }
 
+.learning-img-div {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+
+    img {
+        width: 36px;
+        height: 54px;
+
+    }
+}
+
 .skills-icons-container {
     width: 500px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 46px;
+
+    img {
+        width: 64px;
+        height: 100px;
+    }
 }
 
 .currently-learning-container {
@@ -105,16 +122,17 @@ h1 {
 
     &:hover {
         animation: swapBg 0.6s forwards;
-      }
     }
-    
-    @keyframes swapBg {
-      0% {
+}
+
+@keyframes swapBg {
+    0% {
         background-image: url('../../assets/Ellipse\ 25.png');
-      }
-      100% {
+    }
+
+    100% {
         background-image: url('../../assets/currently learning hover.png');
-      }
+    }
 }
 
 .my-projects-section {
@@ -143,3 +161,20 @@ h1 {
         }
     }
 }
+
+.active-project {
+    background-color: #FFD700; // Gelb
+    color: black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    transition: background-color 0.2s ease;
+}
+
+.active-project {
+    background-color: #FFD700;  // Gelb
+    color: black;
+    border-radius: 10px;
+    padding: 4px 8px;
+    transition: background-color 0.2s ease;
+  }
+  

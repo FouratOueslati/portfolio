@@ -43,6 +43,8 @@
 
     a {
         @include hover-effect;
+        text-decoration: none;
+        color: #262E34;
     }
 }
 

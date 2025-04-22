@@ -14,12 +14,12 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus facilis quos reprehenderit
                     laborum provident illo, odio nostrum atque quidem eligendi tempora nam dolore voluptatum, debitis
                     magnam nobis doloremque! Eum, magnam.</div>
-              <a href="#contactMe"><button class="contact-button">Let's talk</button></a>  
+              <a href="#contactMe" id="mySkills"><button class="contact-button">Let's talk</button></a>  
             </div>
         </div>
     </div>
     <div class="skills-container">
-        <h1>My Skills</h1>
+        <h1 id="mySkills">My Skills</h1>
         <div class="skills-and-to-be-learned">
             <div class="skills-icons-container">
                 <img src="./assets/angular.png" alt="">
@@ -35,7 +35,7 @@
             </div>
             <div class="currently-learning-container">
                 <div>I am currently learning</div>
-                <div>
+                <div class="learning-img-div">
                     <img src="./assets/react.png">
                     <img src="./assets/vue.png">
                 </div>
@@ -46,22 +46,22 @@
             </div>
         </div>
     </div>
-    <div class="my-projects-section">
+    <div id="myProjects"  class="my-projects-section">
         <h1>
             My Projects
         </h1>
         <div class="my-projects">
+            <a (click)="selectProject('Ongoing'); $event.preventDefault()" href="#">
+                1. Ongoing
+            </a>
             <a (click)="selectProject('Ongoing project'); $event.preventDefault()" href="#">
-                1. Ongoing project
+                2. Ongoing project
             </a>
             <a (click)="selectProject('El Pollo Loco'); $event.preventDefault()" href="#">
-                2. El pollo loco
+                3. El pollo loco
             </a>
             <a (click)="selectProject('Join'); $event.preventDefault()" href="#">
-                3. Join
-            </a>
-            <a (click)="selectProject('Ongoing'); $event.preventDefault()" href="#">
-                4. Ongoing
+                4. Join
             </a>
         </div>
     </div>
