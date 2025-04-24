@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-project-detail',
   standalone: true,
@@ -9,4 +10,5 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectDetailComponent {
   @Input() selectedProject: any | null = null;
+  @Input() skillNames: string[] = [];
 }

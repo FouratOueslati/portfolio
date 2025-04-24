@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectDetailComponent } from "../project-detail/project-detail.component";
+import { ProjectDetailComponent } from '../project-detail/project-detail.component';
 
 interface Project {
   duration: string;
@@ -19,7 +19,8 @@ interface Project {
 })
 export class WhyMeSectionComponent {
   selectedProject: Project | null = null;
-
+  skillNames: string[] = [];
+ 
   projects: { [key: string]: Project } = {
 
     'Ongoing': {
@@ -61,6 +62,14 @@ export class WhyMeSectionComponent {
 
   selectProject(projectName: string) {
     this.selectedProject = this.projects[projectName] || null;
+    if (this.selectedProject) {
+      this.skillNames = this.selectedProject.skillsIcons.map(icon => this.extractSkillName(icon));
+    }
+  }
+
+  extractSkillName(src: string): string {
+    const firstWord = src.split('/').pop()?.split(' ')[0] || '';
+    return firstWord.charAt(0).toUpperCase() + firstWord.slice(1);
   }
 }
 

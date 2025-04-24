@@ -19,6 +19,13 @@
     gap: 24px;
 }
 
+.technologies-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
 h1 {
     font-family: 'josefin Sans';
     font-weight: 400;
@@ -53,6 +60,8 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     color: white;
+    max-width: 65ch;
+  
 }
 
 .project-picture-container {

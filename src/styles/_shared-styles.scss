@@ -38,34 +38,83 @@
 }
 
 .send-button {
-    @include button(#8F9190, #8F9190, transparent);  // Default color (disabled state)
+    @include button(#8F9190, #8F9190, transparent);
     position: absolute;
     right: 0;
     top: 20px;
-  
-    &:hover {
-      cursor: pointer;
-    }
-  
-    &.active {
-      @include button(#89BCD0, #89BCD0, transparent);  // When checked, apply this style
-    }
-  
-    &:disabled {
-      @include button(#8F9190, #8F9190, transparent);  // Disabled state
-    }
-  }
-  
 
-  .logo-container{
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.active {
+        @include button(#89BCD0, #89BCD0, transparent);
+    }
+
+    &:disabled {
+        @include button(#8F9190, #8F9190, transparent);
+    }
+}
+
+
+.logo-container {
     font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
+
     div {
         &:hover {
             cursor: pointer;
         }
+    }
+}
+
+@media (max-width: 1500px) {
+    .description-text {
+        width: 50ch;
+    }
+
+    .quote {
+        max-width: 350px;
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-container {
+        flex-direction: column-reverse;
+        position: relative;
+        gap: 32px;
+    }
+    .buttons-container{
+        position: absolute;
+        bottom: 50px;
+    }
+    h1{
+        color: blue !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .skill-icons-container {
+        display: none !important;
+    }
+
+    #responsiveDuration {
+        display: block !important;
+    }
+
+    #responsiveDuration {
+        display: block !important;
+    }
+
+    #nonResponsiveH2 {
+        display: none;
+    }
+
+    #responsiveH2 {
+        display: block !important;
     }
 }
